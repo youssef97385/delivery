@@ -13,7 +13,7 @@ abstract class SafeApiRequest {
         }else{
             //@todo handle api exception
             throw ApiException(response.code().toString())
-            Log.i("exc",response.code().toString());
+            Log.i("exc",response.code().toString())
            
         }
     }

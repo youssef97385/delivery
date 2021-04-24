@@ -15,7 +15,7 @@ class Repository(
 
 
 
-    suspend fun getDeliveries() = apiRequest { api.getDelivery() }
+    suspend fun getDeliveries(offset:Int,limit:Int) = apiRequest { api.getDelivery(offset = offset,limit = limit ) }
 
 
 

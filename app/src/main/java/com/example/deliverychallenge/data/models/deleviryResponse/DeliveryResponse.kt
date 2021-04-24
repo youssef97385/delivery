@@ -1,3 +1,3 @@
 package com.example.deliverychallenge.data.models.deleviryResponse
-
-class DeliveryResponse : ArrayList<DeliveryResponseItem>()
+//
+//class DeliveryResponse : ArrayList<DeliveryResponseItem>()

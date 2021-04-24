@@ -16,9 +16,9 @@ class DeliveryViewModel(
     val deliveries :LiveData<List<DeliveryResponseItem>>
     get()=_deliveries
 
-     fun getDeliveries(){
+     fun getDeliveries(offset:Int,limit:Int){
         job = Coroutines.ioThenMain(
-            {repository.getDeliveries()},
+            {repository.getDeliveries(offset,limit)},
             {
                 _deliveries.value = it
             }
